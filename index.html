@@ -80,7 +80,6 @@
 
 
 
-
 <div id="slider" class="inspiro-slider slider-fullscreen dots-creative" data-height-xs="360">
     <div class="slide kenburns" style="background-image:url('images/slider/fashion.jpg');">
         <div class="container">
@@ -88,12 +87,24 @@
                 <h1 data-caption-animation="zoom-out">STREETWEAR FASHION GROWTH HACKERS</h1>
                 <p class="lead"> diferentierea in cea mai competitiva piata comerciala si dublarea CA in 6 luni</p>
                 <div data-caption-animation="zoom-out">
-                    <a href="https://youtu.be/ZLPHdBVIUso" target="_blank" class="play-button"><i class="fa fa-play"></i></a>
+                    <a href="#" class="play-button" id="playButton"><i class="fa fa-play"></i></a>
+                </div>
+                <div id="videoContainer" style="display: none;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLPHdBVIUso" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+document.getElementById('playButton').addEventListener('click', function() {
+    // Show the video container and hide the play button
+    document.getElementById('playButton').style.display = 'none';
+    document.getElementById('videoContainer').style.display = 'block';
+});
+</script>
+
 
 
 
